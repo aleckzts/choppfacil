@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       <Content>
         <Logo>
           <img src={logo} alt="logo" />
-          {/* <span>Slogan</span> */}
+          <span>Slogan</span>
         </Logo>
       </Content>
     </Container>

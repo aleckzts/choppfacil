@@ -12,9 +12,9 @@ const Routes: React.FC = () => {
       <Header />
       <Content>
         <Switch>
-          <Route path="/home" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
 
-          <Redirect from="/" to="/home" />
+          {/* <Redirect from="/" to="/home" /> */}
         </Switch>
       </Content>
     </Container>
