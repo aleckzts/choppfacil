@@ -18,6 +18,23 @@ export const Content = styled.div`
   max-width: 1200px;
 `;
 
-export const HeaderText = styled.strong`
-  font-size: 22px;
+export const Logo = styled.div`
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: 'Ubuntu', serif;
+  font-weight: 700;
+  font-size: 18px;
+
+  span {
+    flex: 1;
+  }
+
+  img {
+    margin: 0 16px;
+    height: 56px;
+    /* margin-right: 32px; */
+  }
 `;
