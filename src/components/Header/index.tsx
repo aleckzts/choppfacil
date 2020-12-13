@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           <a href="/">
             <img src={logo} alt="logo" />
           </a>
-          <span>Slogan</span>
+          <span>Aprecie com Indicação</span>
         </Logo>
       </Content>
     </Container>
