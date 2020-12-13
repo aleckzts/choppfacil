@@ -9,7 +9,9 @@ const Header: React.FC = () => {
     <Container>
       <Content>
         <Logo>
-          <img src={logo} alt="logo" />
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
           <span>Slogan</span>
         </Logo>
       </Content>

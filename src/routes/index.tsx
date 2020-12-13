@@ -1,10 +1,11 @@
 import React from 'react';
-import { Switch, Redirect, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import { Container, Content } from '../pages/styles';
 
 import HomePage from '../pages/Homepage';
 import Header from '../components/Header';
+import StartPage from '../pages/StartPage';
 
 const Routes: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Routes: React.FC = () => {
       <Content>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/start" component={StartPage} />
 
           {/* <Redirect from="/" to="/home" /> */}
         </Switch>

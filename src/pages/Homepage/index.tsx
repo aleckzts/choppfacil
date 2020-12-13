@@ -1,11 +1,9 @@
 import React from 'react';
 import ButtonLink from '../../components/ButtonLink';
 
-import { Container, Content } from '../styles';
-
 import { FrameOne, FrameTwo } from './styles';
 
-const Dashboard: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <>
       <FrameOne />
@@ -20,4 +18,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default HomePage;

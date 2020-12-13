@@ -26,6 +26,5 @@ export const FrameTwo = styled.div`
 
   strong {
     margin: 16px 0;
-    font-size: 18px;
   }
 `;
