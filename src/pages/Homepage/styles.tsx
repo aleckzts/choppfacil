@@ -45,6 +45,7 @@ export const StyledModal = Modal.styled`
 
   span {
     font-size: 24px;
+    text-align: center;
   }
 `;
 
