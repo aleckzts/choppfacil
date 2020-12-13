@@ -44,7 +44,7 @@ export const StyledModal = Modal.styled`
   background-color: #fff;
 
   span {
-    font-size: 32px;
+    font-size: 24px;
   }
 `;
 
