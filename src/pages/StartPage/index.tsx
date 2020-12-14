@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Content } from '../styles';
 import { Brands, HeaderText } from './styles';
@@ -57,6 +57,20 @@ const brands = [
 ];
 
 const StartPage: React.FC = () => {
+  const [items, setItems] = useState<string[]>([]);
+  const [selectedItems, setSelectedItems] = useState<string[]>([]);
+
+  function handleItemClick(itemName: string) {
+    const alreadySelected = selectedItems.findIndex(item => item === itemName);
+
+    if (alreadySelected >= 0) {
+      const filteredItems = selectedItems.filter(item => item !== itemName);
+      setSelectedItems(filteredItems);
+    } else {
+      setSelectedItems([...selectedItems, itemName]);
+    }
+  }
+
   return (
     <Content>
       <HeaderText>
@@ -64,7 +78,12 @@ const StartPage: React.FC = () => {
       </HeaderText>
       <Brands>
         {brands.map(name => (
-          <p>{name}</p>
+          <li
+            onClick={() => handleItemClick(name)}
+            className={selectedItems.includes(name) ? 'selected' : ''}
+          >
+            {name}
+          </li>
         ))}
       </Brands>
     </Content>
