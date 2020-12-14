@@ -57,7 +57,7 @@ const brands = [
 ];
 
 const StartPage: React.FC = () => {
-  const [items, setItems] = useState<string[]>([]);
+  // const [items, setItems] = useState<string[]>([]);
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
 
   function handleItemClick(itemName: string) {
