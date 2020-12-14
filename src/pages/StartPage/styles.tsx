@@ -49,16 +49,18 @@ export const Brands = styled.div`
 
 `;
 
-export const SuggestButton = styled.button`
+export const SuggestButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #ff9000;
-  height: 48px;
-  border-radius: 10px;
-  border: 0;
-  margin-top: 16px;
-  padding: 0 16px;
-  color: #312e38;
+  button {
+    background: #ff9000;
+    height: 48px;
+    border-radius: 10px;
+    border: 0;
+    margin: 16px 0 32px;
+    padding: 0 16px;
+    color: #312e38;
+  }
 `;

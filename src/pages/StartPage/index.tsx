@@ -90,8 +90,10 @@ const StartPage: React.FC = () => {
           </li>
         ))}
       </Brands>
-      <SuggestButton type="submit" onClick={createSuggestion}>
-        Recomendações
+      <SuggestButton>
+        <button type="submit" onClick={createSuggestion}>
+          Recomendações
+        </button>
       </SuggestButton>
     </Content>
   );
