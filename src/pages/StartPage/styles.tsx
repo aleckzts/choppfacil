@@ -34,7 +34,7 @@ export const Brands = styled.div`
 
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
 
     text-align: center;
