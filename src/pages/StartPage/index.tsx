@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 
 import { Content } from '../styles';
-import { Brands, HeaderText } from './styles';
+import { Brands, HeaderText, SuggestButton } from './styles';
 
 const brands = [
   'Adriática',
@@ -71,6 +71,10 @@ const StartPage: React.FC = () => {
     }
   }
 
+  const createSuggestion = useCallback(() => {
+    console.log(selectedItems);
+  }, [selectedItems]);
+
   return (
     <Content>
       <HeaderText>
@@ -86,6 +90,9 @@ const StartPage: React.FC = () => {
           </li>
         ))}
       </Brands>
+      <SuggestButton type="submit" onClick={createSuggestion}>
+        Recomendações
+      </SuggestButton>
     </Content>
   );
 };

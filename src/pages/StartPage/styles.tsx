@@ -48,3 +48,17 @@ export const Brands = styled.div`
   }
 
 `;
+
+export const SuggestButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff9000;
+  height: 48px;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 16px;
+  padding: 0 16px;
+  color: #312e38;
+`;
