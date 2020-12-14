@@ -22,10 +22,15 @@ export const FrameTwo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  align-self: center;
+  margin: 16px;
 
-  width: 100%;
+  width: 50%;
+  flex-wrap: wrap;
 
   strong {
+    font-size: 22px;
     margin: 16px 0;
   }
 `;

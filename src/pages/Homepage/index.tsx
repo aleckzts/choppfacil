@@ -24,8 +24,8 @@ const HomePage: React.FC = () => {
         <FrameOne />
         <FrameTwo>
           <strong>
-            Lorem ipsum vitae molestie scelerisque a augue sit donec netus
-            suspendisse
+            Selecione as cervejas que você costuma consumir para receber uma
+            recomendação de novas marcas que <b>dão match</b> com o seu gosto!
           </strong>
           <ButtonLink to="/start">Começar</ButtonLink>
         </FrameTwo>
